@@ -18,7 +18,7 @@ Make sure to use the formatting conventions of RMarkdown to make your report nea
 **2. What is the difference between R and RStudio? What is GitHub and why is it useful to programmers?**  
 R is a scripting language and Rstudio is a IDE that makes it easier and cleaner to code with R.
 
-Github allows programmers to upload projects or their work, which allows them to collaborate on projects or allow professors to check your work.
+Github allows programmers to upload projects, which allows them to collaborate on projects or allow professors to check their work.
 
 **3. Navigate to my [BIS15L](https://github.com/jmledford3115/BIS15LW2022_jledford) repository on GitHub. Notice that near the bottom there is a nice, clean description of the repository. You want this on your repository! It is built by making edits to the `README.md` file using the RMarkdown conventions. Edit your repository's `README.md` file so that you have a clean informative description, including your email address. Be creative! You don't need to just copy mine. There are lots of examples online.**  
 
@@ -38,9 +38,15 @@ Github allows programmers to upload projects or their work, which allows them to
 
 No.
 
-+5 - 3 + 2
+```{r}
+(5-3)*2
+```
 
-8 * 2
+
+```{r}
+(8/2)**2
+```
+
 
 
 **6. `Objects` in R are a way in which we can store data or operations. We will talk more about objects next week. For now, make a new object `pi` as 3.14159265359 by running the following code chunk. You should now see the object `pi` in the environment window in the top right.**  
