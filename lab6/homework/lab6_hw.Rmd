@@ -36,6 +36,14 @@ fisheries <- readr::read_csv(file = "data/FAO_1950to2012_111914.csv")
 skim(fisheries)
 ```
 
+```{r}
+head(fisheries)
+```
+```{r}
+str(fisheries)
+
+```
+
 2. Use `janitor` to rename the columns and make them easier to use. As part of this cleaning step, change `country`, `isscaap_group_number`, `asfis_species_number`, and `fao_major_fishing_area` to data class factor. 
 ```{r}
 fisheries <- clean_names(fisheries)
