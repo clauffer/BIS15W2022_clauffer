@@ -3,9 +3,9 @@ title: "Lab 9 Homework"
 author: "Colin Lauffer"
 date: "`r Sys.Date()`"
 output:
-  html_document:
+  html_document: 
     theme: spacelab
-    toc: no
+    keep_md: yes
 ---
 
 ```{r setup, include=FALSE}
@@ -54,12 +54,8 @@ naniar::miss_var_summary(colleges)
 ```
 
 ```{r}
-colleges <- 
-  readr::read_csv(file = "data/ca_college_data.csv", 
-                  na = c("NA", " ", ".", "-999"))
 colleges_clean <- colleges %>%
-  clean_names %>%
-  n
+  clean_names 
 ```
 
 2. Which cities in California have the highest number of colleges?
