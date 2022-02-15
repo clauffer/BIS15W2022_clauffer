@@ -229,7 +229,7 @@ ecosphere %>%
 
 ```{r}
 ecosphere %>% 
-  ggplot(aes(x=diet, y=log10_mass, fill=migratory_strategy))+ 
+  ggplot(aes(x=diet, y=log10_mass, fill=migratory_strategy))+
   geom_boxplot(alpha=0.4)+ 
   facet_grid(migratory_strategy~.)+
   theme(axis.text.x = element_text(angle = 60, hjust = 1))+
@@ -250,12 +250,14 @@ ecosphere %>%
 ## Practice
 1. Build a faceted plot that shows a distribution of life expectancy by habitat type.
 ```{r}
-
+ecosphere %>%
+  ggplot(aes(x=life_expectancy))+ geom_density() + facet_grid(~life_expectancy~habitat, scales = "free_y") 
 ```
 
 2. Try the same plot as #1 above, but include life_expectancy~habitat.
 ```{r}
-
+ecosphere %>%
+  ggplot(aes(x=life_expectancy, fill=habitat))+ geom_density() + facet_grid(~life_expectancy~habitat)
 ```
 
 ## That's it, let's take a break!   
