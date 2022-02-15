@@ -160,7 +160,11 @@ gapminder %>%
 
 ```r
 gapminder %>%
-  ggplot(aes(x= gdpPercap, y =lifeExp)) + geom_point(col = "skyblue", na.rm = T) + scale_x_log10() + theme_minimal()
+  ggplot(aes(x= gdpPercap, y =lifeExp)) + geom_point(col = "skyblue", na.rm = T) + scale_x_log10() + theme_minimal() + geom_smooth(method = lm, se = F)
+```
+
+```
+## `geom_smooth()` using formula 'y ~ x'
 ```
 
 ![](lab11_hw_files/figure-html/unnamed-chunk-10-1.png)<!-- -->

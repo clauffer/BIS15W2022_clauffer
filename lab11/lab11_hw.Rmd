@@ -108,7 +108,7 @@ gapminder %>%
 
 ```{r}
 gapminder %>%
-  ggplot(aes(x= gdpPercap, y =lifeExp)) + geom_point(col = "skyblue", na.rm = T) + scale_x_log10() + theme_minimal()
+  ggplot(aes(x= gdpPercap, y =lifeExp)) + geom_point(col = "skyblue", na.rm = T) + scale_x_log10() + theme_minimal() + geom_smooth(method = lm, se = F)
 ```
 
 
